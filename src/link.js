@@ -9,8 +9,16 @@ class Link extends Component {
 
   constructor() {
     super();
+
+    this._onMouseEnter = this._onMouseEnter.bind(this);
+    this._onMouseLeave = this._onMouseLeave.bind(this);
   }
 
+  this.state = {
+    class: STATUS.NORMAL,
+  };
 }
+
+
 
 export default Link;
