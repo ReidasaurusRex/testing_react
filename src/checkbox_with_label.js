@@ -20,6 +20,7 @@ class CheckboxWithLabel extends Component {
           checked={this.state.isChecked}
           onChange={this.onChange}
         />
+        {this.state.isChecked ? this.props.labelOn : this.props.labelOff}
       </label>
     )
   }
