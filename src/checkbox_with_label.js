@@ -11,6 +11,18 @@ class CheckboxWithLabel extends Component {
   onChange() {
     this.setState({isChecked: !this.state.isChecked});
   }
+
+  render() {
+    return (
+      <label>
+        <input
+          type="checkbox"
+          checked={this.state.isChecked}
+          onChange={this.onChange}
+        />
+      </label>
+    )
+  }
 }
 
 export default CheckboxWithLabel;
